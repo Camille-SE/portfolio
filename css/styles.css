@@ -133,8 +133,7 @@ span.m-left {
 }
 
 .profile-image img {
-  width: 450px;
-  /* height: 50vh; */
+  width: 500px;
   margin-top: 50px;
   opacity: .75;
   border: 0px solid white;
@@ -239,6 +238,17 @@ div[class^='tag-'] p {
   border: 2px solid #48CFAD;
   border-radius: 20px;
   margin-top: 7px;
+}
+
+.progressbar::before {
+  content: attr(data-label);
+  position: absolute;
+  height: 16px;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(100% - 1em);
+  background-color: #48CFAD;
+  border-radius: 1em;
 }
 
 div[class^='bar-'] {
