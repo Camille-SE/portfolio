@@ -41,7 +41,6 @@ header a,
 .text h3,
 .text p,
 .about h1,
-.resume h1,
 .work h1,
 .contact h1 {
   color: #b8b7b7
@@ -157,6 +156,7 @@ span.m-left {
   font-size: 10rem;
   z-index: 0;
   color:#b0afaf;
+  text-transform: none;
 }
 
 .about-me-info {
@@ -241,12 +241,13 @@ div.hideCategory {
   display: none;
 }
 
-.showCategory {
-  display: block;
-}
 
-.contact {
-  margin-top: 60px;
+.contact h1 {
+  margin-top: 300px;
+  margin-left: 100px;
+  font-size: 80px;
+  
+
 }
 
 form input,
@@ -272,6 +273,16 @@ form input:last-child {
   border: none;
 }
 
+button {
+  width: 8rem;
+  padding: 1.4rem;
+  cursor: pointer;
+  background: #000080;
+  color: white;
+  margin-left: 230px;
+  
+}
+
 footer hr {
   border: 2px solid #000080;
   margin-top: 80px;
@@ -291,7 +302,6 @@ footer p {
   background: #000080;
   bottom: 40px;
   right: 50px;
-  scroll-behavior: smooth;
 
   text-decoration: none;
   text-align: center;
